@@ -1,0 +1,56 @@
+.add-book-container {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 415px;
+  height: 180px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.add-book-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.add-button {
+  font-size: 35px;
+  color: #ad1457;
+  cursor: pointer;
+}
+
+.add-book-right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.field {
+  margin: 10px;
+  width: 250px;
+  display: flex;
+}
+.field-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 7px;
+}
+
+.field-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start
+}
+
+.select-option {
+  font-size: 12px;
+  background-color: white;
+  height: 25px;
+  outline: none;
+  width: 153px;
+}

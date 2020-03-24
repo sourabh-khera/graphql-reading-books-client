@@ -1,0 +1,20 @@
+body {
+  background-color: #eee;
+}
+.division-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-division {
+  display: flex;
+  flex: 1.5;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.right-division {
+  display: flex;
+  flex: 1;
+  background-color: #ad1457;
+}

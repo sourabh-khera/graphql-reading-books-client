@@ -1,0 +1,7 @@
+.heading {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 20px;
+  font-weight: 600;
+}
