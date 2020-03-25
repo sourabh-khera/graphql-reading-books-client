@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import axios from 'axios';
 import BookList from '../../component/book_list';
 import Heading from '../../component/heading';
@@ -6,11 +6,9 @@ import BookInfo from '../../component/book_info';
 import AddBook from '../add_book';
 import { getListOfBooks, getSpecificBookDetail } from '../../queries';
 
-
 import './style.css';
 
 const  BooksLibrary = () => {
-  const [bookAdded, setBookAdded] = useState(false);
   const [booksList, setBooksList] = useState([]);
   const [bookDetail, setBookDetail] = useState({})
   
@@ -41,11 +39,12 @@ const  BooksLibrary = () => {
       setBooksList(tempList);
     }
   }, [booksList]);
+  
   return (
     <div className='division-container'>
       <div className='left-division'>
         <Heading />
-        <BookList handleClick={handleBookClick} bookAdded={bookAdded} booksList={booksList} />
+        <BookList handleClick={handleBookClick} booksList={booksList} />
         <AddBook updateBookAdded={updateBookAdded} />
       </div>
       <div className='right-division'>

@@ -5,7 +5,6 @@ import { getAuthors, addNewBook } from '../../queries';
 import './style.css';
 
 const AddBook = ({updateBookAdded}) => {
-  console.log('rendering----+++');
   const [ authors, setAuthors ] = useState([]);
   const [ authorInfo, setAuthoInfo ] = useState({bookName: '', genre: ''});
   const [ genre, setGenre ] = useState('');
