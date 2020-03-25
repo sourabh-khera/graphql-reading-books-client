@@ -21,4 +21,4 @@ const renderBookInfo = ({bookDetail}) => {
  }
 };
 
-export default renderBookInfo;
+export default React.memo(renderBookInfo);
